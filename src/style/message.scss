@@ -1,0 +1,22 @@
+.message{
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    margin: 2px;
+    width: 70%;
+    margin: auto;
+
+    &:hover{
+        background-color: #eeeeee;
+        cursor: pointer;
+    }
+
+    &__preview{
+
+    }
+
+    &__all{
+        
+    }
+}

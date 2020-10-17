@@ -1,0 +1,105 @@
+.home{
+    background-image: url(../assets/images/bergen_pier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 1100px;
+    font-family: Montserrat;
+    font-size: 20px;
+
+    h2{
+        font-family: Kufam;
+        font-size: 50px;
+        padding-top: 150px;
+        padding-left: 30px;
+    }
+
+    .searcharea{
+        
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+
+        div{
+            display: inline-block;
+        }
+
+        label{
+            margin: 0;
+        }
+
+        input.rbt-input-main ,
+        input.form-control,
+        input.rbt-input{
+            border-radius: 0;
+            margin: 0px 0 25px 5px;
+            height: 55px;
+            padding: 5px;
+            font-family: Montserrat;
+            font-size: 20px;
+        }
+
+        input{
+            border: none;
+            margin: 0px 0 25px 5px;
+            height: 55px;
+            padding: 5px;
+            box-shadow: 1px 1px 4px rgb(72, 72, 72);
+
+        }
+
+        input[type="button"]{
+            background-color: #61C0FF;
+            color: #ffffff;
+            padding: 10px;
+            height: 55px;
+
+            &:hover{
+                background-color: #2D2E83;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .home{
+
+        h2{
+            font-size: calc(20px + 2vw);
+        }
+    }
+
+    .searcharea{
+        flex-direction: column;
+
+        &__section{
+            width: 60%;
+
+            input{
+                width: 100%;
+            }
+
+            .searchAccommodation{
+                width: 100%;
+            }
+
+            .split{
+                width: 50%;
+
+                input{
+                    margin-right: 2%;
+                    width: 98%;
+                }
+            }
+        }
+        
+        &__button{
+            input{
+                width: 60%;
+            }
+        }
+    }
+}

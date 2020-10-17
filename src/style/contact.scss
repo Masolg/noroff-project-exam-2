@@ -1,0 +1,46 @@
+.contact{
+    padding-top: 80px;
+    background-color: #6D86A7;
+    color: #ffffff;
+    min-height: 1000px;
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align: center;
+
+    h2.contact__heading{
+        font-family: Kufam;
+        font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__label{
+        font-size: 21px;
+    }
+
+    &__write{
+        border: none;
+        width: 60%;
+        margin: auto;
+        box-shadow: 1px 1px 4px rgb(72, 72, 72);
+        margin-bottom: 30px;
+    }
+
+    span.error{
+        color: #FF0000;
+        font-size: 18px;
+    }
+
+    &__submit{
+        background-color: #61C0FF;
+        color: #ffffff;
+        border: none;
+        width: 100px;
+        box-shadow: 1px 1px 4px rgb(72, 72, 72);
+
+
+        &:hover{
+            background-color: #2D2E83;
+        }
+    }
+}

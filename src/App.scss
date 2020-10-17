@@ -1,0 +1,22 @@
+@font-face{
+    font-family: Montserrat;
+    src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: Kufam;
+    src: url("./assets/fonts/Kufam/static/Kufam-Regular.ttf");
+}
+
+@font-face{
+    font-family: Lobster;
+    src: url("./assets/fonts/Lobster/Lobster-Regular.ttf");
+}
+
+@import "~bootstrap/scss/bootstrap";
+.App {
+  text-align: left;
+}
+
+
+
