@@ -31,16 +31,17 @@
         padding-right: 30px;
 
         img{
-            width: 120px;
+            width: 100px;
             padding: 20px;
+            padding-top: 30px;
         }
 
         :hover{
-            opacity: 70%;
+            opacity: 90%;
         }
 
         :active{
-            opacity: 50%;
+            opacity: 80%;
         }
     }
 }

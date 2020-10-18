@@ -4,12 +4,26 @@
     color: #ffffff;
     min-height: 1000px;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 24px;
+
+    &__result{
+        width: 1200px;
+        margin: auto;
+
+    }
 
     h2{
         font-family: Kufam;
         font-size: 40px;
         padding-top: 30px;
         text-align: center;
+    }
+}
+
+@media (max-width: 1200px){
+    .results{
+        &__result{
+            width: 90%;
+        }
     }
 }

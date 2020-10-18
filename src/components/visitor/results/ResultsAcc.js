@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../../style/resultsAcc.scss';
-
 import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
+
 
 function ResultsAcc({accom}) {
 

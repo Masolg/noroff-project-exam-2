@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../../style/message.scss';
 
+
 function Message({ message }) {
 
     const [ showAll, setShowAll ] = useState(false);

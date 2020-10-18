@@ -4,6 +4,8 @@ import Illustration from '../../../components/Illustration';
 import { BASE_URL, headers } from "../../../constants/api";
 import Footer from '../../../components/visitor/Footer';
 import Enquiry from './Enquiry';
+import { NavLink } from 'react-router-dom';
+
 
 function Enquirys() {
 
@@ -30,6 +32,9 @@ function Enquirys() {
     return (
         <>
         <div className="enquirys">
+            <NavLink to="/adminstart">
+                <input type="button" value="Back" />
+            </NavLink>
             <h2>Enquiries</h2>
             {enquiries.map((enquiry, id) =>
                 <Enquiry key={id} enquiry={enquiry} />

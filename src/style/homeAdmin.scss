@@ -18,21 +18,27 @@
         margin: auto;
         padding-top: 20px;
 
-        .loginError{
-            color: red;
+        label{
+            padding-top: 20px;
         }
+
     }
 
     input{
         border: none;
-        margin: 0px 0 25px 5px;
         height: 50px;
         padding: 5px;
         width: 100%;
         box-shadow: 1px 1px 4px rgb(72, 72, 72);
     }
 
+    &__error{
+        color: #FCD255;
+        text-align: center;
+    }
+
      &__button{
+        padding-top: 30px;
         text-align: center;
 
         input[type="button"]{

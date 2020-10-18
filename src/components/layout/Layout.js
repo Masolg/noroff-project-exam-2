@@ -1,16 +1,13 @@
-import React from 'react'
-
+import React from 'react';
 import '../../style/layout.scss';
-
+import {Person} from 'react-bootstrap-icons';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     NavLink,
 } from "react-router-dom";
-
 import { Navbar, Nav } from 'react-bootstrap';
-
 import logo from "../../assets/images/logo.png";
 import Home from "../visitor/home/Home";
 import Contact from "../visitor/contact/Contact";
@@ -29,9 +26,9 @@ function Layout() {
 
         <div className="navigation">
             <Router>
-                <Navbar expand="md" className="nav" >
+                <Navbar expand="lg" className="nav">
                     <NavLink exact to="/" >
-                        <Navbar.Brand href="#home" className="nav__brand">
+                        <Navbar.Brand className="nav__brand">
                             <h1>Holidaze</h1>
                             <img
                                 src={logo} 
@@ -41,10 +38,12 @@ function Layout() {
                         </Navbar.Brand>
                     </NavLink>
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Collapse className="justify-content-end" style={{ backgroundColor:"#a9d2eac2", marginTop:"20px",textAlign:"right"}}>
                         <Nav> 
-                            <NavLink exact to="/"><span className="navcol">Home</span></NavLink>
-                            <NavLink to="/contact"><span className="navcol">Contact</span></NavLink>
+                            <NavLink className="nav__navlink" exact to="/"><span className="navcol">Home</span></NavLink>
+                            <NavLink className="nav__navlink" exact to="/results"><span className="navcol">Accommodations</span></NavLink>
+                            <NavLink className="nav__navlink" to="/contact"><span className="navcol">Contact</span></NavLink>
+                            <NavLink className="nav__navlink" to="/admin"><span className="navcol person"><Person size={35} /></span></NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

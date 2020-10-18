@@ -2,8 +2,6 @@ import React from 'react';
 import '../../../style/start.scss';
 import Illustration from '../../../components/Illustration';
 import Footer from '../../../components/visitor/Footer';
-
-
 import { NavLink } from 'react-router-dom';
 
 

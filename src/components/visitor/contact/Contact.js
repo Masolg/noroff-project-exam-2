@@ -1,17 +1,15 @@
 import React from 'react';
 import '../../../style/contact.scss';
-
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
 import Illustration from '../../../components/Illustration';
 import Footer from '../../../components/visitor/Footer';
-
 import { useHistory } from 'react-router-dom'; 
 import { BASE_URL, headers } from "../../../constants/api";
+
 
 const schema = yup.object().shape({
     name: yup.string().required("Please enter your name"),

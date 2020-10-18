@@ -6,6 +6,22 @@
     font-family: Montserrat;
     font-size: 24px;
 
+    input[type="button"]{
+        background-color: #2D2E83;
+        color: #ffffff;
+        border: none;
+        font-size: 15px;
+        box-shadow: 1px 1px 4px rgb(72, 72, 72);
+        width: 80px;
+        margin-left: 10%;
+        margin-bottom: 0;
+        display: block;
+
+        &:hover{
+            color: #61C0FF;
+        }
+    }
+
     h2{
         font-family: Kufam;
         font-size: 40px;

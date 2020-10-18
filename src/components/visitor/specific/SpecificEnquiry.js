@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../../../style/specificEnquiry.scss';
-
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { BASE_URL, headers } from "../../../constants/api";
+
 
 const schema = yup.object().shape({
     name: yup.string().required("Please enter your name"),
@@ -12,11 +12,13 @@ const schema = yup.object().shape({
         .string()
         .email("Pleases enter a valid e-mail address")
         .required("E-mail address is required"),
-    checkIn: yup.string().required("This field can not be blank"),
-    checkOut: yup.string().required("This field can not be blank")
+    checkIn: yup.string().required("Check-In can not be blank"),
+    checkOut: yup.string().required("Check-Out can not be blank")
 }); 
 
 function SpecificEnquiry({ accommodation, show, setShow }) {
+
+    const [ sentEnquiry, setSentEnquiry ] = useState(false);
 
     const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
@@ -38,7 +40,7 @@ function SpecificEnquiry({ accommodation, show, setShow }) {
             .then((response) => response.json())
             .then((j) => {
                 console.log(j);
-                // Here I need to change to success box
+                setSentEnquiry(true);
             })
             .catch((error) => console.error(error));
     }
@@ -53,15 +55,16 @@ function SpecificEnquiry({ accommodation, show, setShow }) {
                 <div className="enquiry__box">
                     <input type="button" value="Close" onClick={handleClose} />
                     <h2>Send enquiry for {accommodation.name}</h2>
+                    <div className="sentSuccess">{sentEnquiry ? "Thank you! We will respond as soon as possible." : ""}</div>
                     <form onSubmit={handleSubmit(handleEnquiry)}>
                         <input type="text" name="name" placeholder="Name"  ref={register} />
                         <span className="error">{errors.name && <p>{errors.name.message}</p>}</span>
                         <input type="text" name="email" placeholder="E-mail" ref={register} />
                         <span className="error">{errors.email && <p>{errors.email.message}</p>}</span>
                         <input type="date" name="checkIn" placeholder="Check-In" ref={register} />
-                        <span className="error">{errors.checkIn && <p>{errors.checkIn.message}</p>}</span>
                         <input type="date" name="checkOut" placeholder="Check-Out" ref={register} />
                         <span className="error">{errors.checkOut && <p>{errors.checkOut.message}</p>}</span>
+                        <span className="error">{errors.checkIn && <p>{errors.checkIn.message}</p>}</span>
                         <input type="submit" value="Send" />
                     </form>
                 </div>

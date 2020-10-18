@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { Typeahead } from "react-bootstrap-typeahead";
-
 import { useHistory } from "react-router-dom";
-
 import '../../../style/home.scss';
 import { BASE_URL, headers } from "../../../constants/api";
 import Footer from '../../../components/visitor/Footer';

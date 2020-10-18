@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../../style/enquiry.scss';
 
+
 function Enquiry({ enquiry }) {
 
     const [ showAll, setShowAll ] = useState(false);

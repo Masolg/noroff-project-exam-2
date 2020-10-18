@@ -1,10 +1,9 @@
 import React from 'react';
 import '../../style/footer.scss';
-
-
 import facebook from "../../assets/images/facebook.png";
 import twitter from "../../assets/images/twitter.png";
 import instagram from "../../assets/images/instagram.png";
+
 
 function Footer() {
     return (

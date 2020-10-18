@@ -7,22 +7,22 @@
     min-height: calc( 90vh );
     font-family: Montserrat;
     font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px;
 
     h2{
         font-family: Kufam;
         font-size: 40px;
         padding-top: 30px;
-        text-align: center;
     }
 
     &__info{
-        padding: 50px;
+        padding: 50px 0;
         font-size: 27px;
         display: column;
     }
 
     &__image{
-        text-align: center;
 
         img{
             height: 600px;
@@ -38,29 +38,14 @@
         padding-bottom: 30px;
     }
 
-    &__price{
-        text-align: center;
-    }
-
-    &__maxGuests{
-        text-align: center;
-    }
-
-    &__address{
-        text-align: center;
-    }
-
     &__button{
-        text-align: center;
 
         button{
             background-color: #61C0FF;
             color: #ffffff;
             border: none;
-            width: 110px;
-            padding: 5px;
+            padding: 10px 20px;
             box-shadow: 1px 1px 4px rgb(72, 72, 72);
-
 
             &:hover{
                 background-color: #2D2E83;
@@ -70,7 +55,7 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1200px){
     .specific{
         img{
             height: 400px;
@@ -78,7 +63,7 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 900px){
     .specific{
         img{
             height: 300px;
@@ -86,10 +71,18 @@
     }
 }
 
-@media (max-width: 490px){
+@media (max-width: 650px){
     .specific{
         img{
             height: 250px;
+        }
+    }
+}
+
+@media (max-width: 490px){
+    .specific{
+        img{
+            height: 200px;
         }
     }
 }

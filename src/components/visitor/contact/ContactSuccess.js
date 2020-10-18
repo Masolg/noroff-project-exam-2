@@ -2,7 +2,6 @@ import React from 'react';
 import '../../../style/contactSuccess.scss';
 import Illustration from '../../../components/Illustration';
 import Footer from '../../../components/visitor/Footer';
-
 import check from "../../../assets/images/check.png";
 
 

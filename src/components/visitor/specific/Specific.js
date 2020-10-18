@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../../../style/specific.scss';
-
 import Illustration from '../../../components/Illustration';
 import Footer from '../../../components/visitor/Footer';
 import SpecificEnquiry from '../../../components/visitor/specific/SpecificEnquiry';
 import { useParams } from "react-router-dom";
 import { BASE_URL, headers } from "../../../constants/api";
+
 
 function Specific() {
 

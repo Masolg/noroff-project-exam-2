@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../../../style/results.scss';
-
 import ResultsAcc from "./ResultsAcc";
 import Illustration from '../../../components/Illustration';
 import Footer from '../../../components/visitor/Footer';
-
 import { useParams, useHistory } from "react-router-dom";
 import { BASE_URL, headers } from "../../../constants/api";
 
@@ -45,11 +43,13 @@ function Results() {
     
     return (
         <div className="results">
-            <h2>Results</h2>
+            <h2>Accommodations</h2>
 
-            {accommodations.map((accom) => 
-                <ResultsAcc key={accom.id} accom={accom} />
-            )}
+            <div className="results__result">
+                {accommodations.map((accom) => 
+                    <ResultsAcc key={accom.id} accom={accom} />
+                    )}
+            </div>
 
             <Illustration />
             <Footer />

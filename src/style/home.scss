@@ -15,8 +15,7 @@
         padding-left: 30px;
     }
 
-    .searcharea{
-        
+    .searcharea{ 
         width: 100%;
         padding-top: 100px;
         padding-left: 30px;
@@ -48,7 +47,6 @@
             height: 55px;
             padding: 5px;
             box-shadow: 1px 1px 4px rgb(72, 72, 72);
-
         }
 
         input[type="button"]{
@@ -76,7 +74,7 @@
         flex-direction: column;
 
         &__section{
-            width: 60%;
+            width: calc( 95px + 70% );
 
             input{
                 width: 100%;
@@ -98,7 +96,7 @@
         
         &__button{
             input{
-                width: 60%;
+                width: calc( 95px + 69% );
             }
         }
     }

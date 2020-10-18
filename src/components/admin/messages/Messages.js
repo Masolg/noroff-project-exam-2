@@ -4,6 +4,8 @@ import Illustration from '../../../components/Illustration';
 import { BASE_URL, headers } from "../../../constants/api";
 import Footer from '../../../components/visitor/Footer';
 import Message from './Message';
+import { NavLink} from 'react-router-dom';
+
 
 function Messages() {
 
@@ -30,6 +32,9 @@ function Messages() {
     return (
         <>
         <div className="messages">
+            <NavLink to="/adminstart">
+                <input type="button" value="Back" />
+            </NavLink>
             <h2>Messages</h2>
             {messages.map((message, id) => 
                 <Message key={id} message={message} />
